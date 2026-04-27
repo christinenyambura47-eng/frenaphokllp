@@ -53,7 +53,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-light text-lg text-slate-900 mb-2">Phone</h3>
-                      <a href="tel:+254" className="text-slate-600 hover:text-sky-600 transition-colors font-light">
+                      <a href="tel:+254" className="text-slate-600 hover:text-amber-600 transition-colors font-light">
                         +254 (Phone)
                       </a>
                     </div>
@@ -143,6 +143,13 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
+        </section>
+      </main>
+
+      <Footer />
+    </div>
+  )
+}
         </section>
       </main>
 
