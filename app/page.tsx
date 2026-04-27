@@ -37,12 +37,12 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">
-                  <Button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-10 py-6 text-lg font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
+                  <Button className="bg-gradient-to-r from-sky-600 to-sky-700 hover:from-sky-700 hover:to-sky-800 text-white px-10 py-6 text-lg font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
                     Get Your Quote <ArrowRight className="w-5 h-5" />
                   </Button>
                 </Link>
                 <Link href="/services">
-                  <Button variant="outline" className="px-10 py-6 text-lg font-light tracking-wider border-2 border-amber-600/30 text-slate-900 hover:bg-amber-50 hover:border-amber-600/50">
+                  <Button variant="outline" className="px-10 py-6 text-lg font-light tracking-wider border-2 border-sky-600/30 text-slate-900 hover:bg-sky-50 hover:border-sky-600/50">
                     Explore Services
                   </Button>
                 </Link>
@@ -67,7 +67,7 @@ export default function Home() {
                 'Competitive pricing and flexible payment',
               ].map((item) => (
                 <div key={item} className="flex gap-4 group">
-                  <div className="p-1.5 bg-amber-600 rounded-full flex-shrink-0 group-hover:bg-amber-700 transition-colors duration-300">
+                  <div className="p-1.5 bg-sky-600 rounded-full flex-shrink-0 group-hover:bg-sky-700 transition-colors duration-300">
                     <CheckCircle2 className="w-5 h-5 text-white flex-shrink-0" />
                   </div>
                   <p className="text-slate-700 font-light leading-relaxed">{item}</p>
@@ -91,7 +91,7 @@ export default function Home() {
               {services.map((service) => {
                 const IconComponent = service.icon
                 return (
-                  <Card key={service.id} className="p-8 border border-amber-600/10 bg-white hover:shadow-xl hover:border-amber-600/20 transition-all duration-300 flex flex-col h-full group">
+                  <Card key={service.id} className="p-8 border border-sky-600/10 bg-white hover:shadow-xl hover:border-sky-600/20 transition-all duration-300 flex flex-col h-full group">
                     <div className="relative w-full h-32 mb-6 rounded-lg overflow-hidden">
                       <Image
                         src={service.image}
@@ -102,14 +102,14 @@ export default function Home() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="p-3 bg-amber-600/10 rounded-lg group-hover:bg-amber-600/15 transition-colors duration-300">
-                        <IconComponent className="w-5 h-5 text-amber-600" />
+                      <div className="p-3 bg-sky-600/10 rounded-lg group-hover:bg-sky-600/15 transition-colors duration-300">
+                        <IconComponent className="w-5 h-5 text-sky-600" />
                       </div>
                       <h3 className="text-xl font-light text-slate-900">{service.title}</h3>
                     </div>
                     <p className="text-slate-600 mb-8 flex-grow font-light leading-relaxed">{service.description}</p>
                     <Link href={`/services/${service.slug}`}>
-                      <Button variant="outline" className="w-full border-amber-600/20 text-slate-900 font-light hover:bg-amber-50 hover:border-amber-600/40 transition-all duration-300">
+                      <Button variant="outline" className="w-full border-sky-600/20 text-slate-900 font-light hover:bg-sky-50 hover:border-sky-600/40 transition-all duration-300">
                         Learn More
                       </Button>
                     </Link>
@@ -120,7 +120,7 @@ export default function Home() {
 
             <div className="text-center mt-16">
               <Link href="/services">
-                <Button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-3 text-lg font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300">
+                <Button className="bg-gradient-to-r from-sky-600 to-sky-700 hover:from-sky-700 hover:to-sky-800 text-white px-8 py-3 text-lg font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300">
                   View All Services
                 </Button>
               </Link>
@@ -142,7 +142,7 @@ export default function Home() {
               {products.map((product) => {
                 const IconComponent = product.icon
                 return (
-                  <Card key={product.id} className="p-8 border border-amber-600/10 bg-gradient-to-br from-white to-slate-50 hover:shadow-xl hover:border-amber-600/20 transition-all duration-300 flex flex-col group">
+                  <Card key={product.id} className="p-8 border border-sky-600/10 bg-gradient-to-br from-white to-slate-50 hover:shadow-xl hover:border-sky-600/20 transition-all duration-300 flex flex-col group">
                     <div className="relative w-full h-32 mb-6 rounded-lg overflow-hidden">
                       <Image
                         src={product.image}
@@ -153,8 +153,8 @@ export default function Home() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
                     <div className="flex items-center justify-center mb-4">
-                      <div className="p-3 bg-amber-600/10 rounded-lg group-hover:bg-amber-600/15 transition-colors duration-300">
-                        <IconComponent className="w-6 h-6 text-amber-600" />
+                      <div className="p-3 bg-sky-600/10 rounded-lg group-hover:bg-sky-600/15 transition-colors duration-300">
+                        <IconComponent className="w-6 h-6 text-sky-600" />
                       </div>
                     </div>
                     <h3 className="text-lg font-light text-slate-900 text-center mb-3">{product.title}</h3>
@@ -162,7 +162,7 @@ export default function Home() {
                       {product.description}
                     </p>
                     <div className="text-center pt-4 border-t border-amber-600/10">
-                      <p className="text-amber-600 font-light text-sm">{product.price}</p>
+                      <p className="text-sky-600 font-light text-sm">{product.price}</p>
                     </div>
                   </Card>
                 )
@@ -201,30 +201,30 @@ export default function Home() {
                 </p>
                 <ul className="space-y-4 mb-10">
                   <li className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-6 h-6 text-sky-600 flex-shrink-0 mt-0.5" />
                     <span className="text-slate-700 font-light">Comprehensive needs assessment</span>
                   </li>
                   <li className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-6 h-6 text-sky-600 flex-shrink-0 mt-0.5" />
                     <span className="text-slate-700 font-light">Customized solution design</span>
                   </li>
                   <li className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-6 h-6 text-sky-600 flex-shrink-0 mt-0.5" />
                     <span className="text-slate-700 font-light">Flexible pricing options</span>
                   </li>
                   <li className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-6 h-6 text-sky-600 flex-shrink-0 mt-0.5" />
                     <span className="text-slate-700 font-light">Dedicated project management</span>
                   </li>
                 </ul>
                 <Link href="/contact">
-                  <Button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-10 py-4 text-lg font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
+                  <Button className="bg-gradient-to-r from-sky-600 to-sky-700 hover:from-sky-700 hover:to-sky-800 text-white px-10 py-4 text-lg font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
                     Request Custom Quote <ArrowRight className="w-5 h-5" />
                   </Button>
                 </Link>
               </div>
               <div className="flex-1">
-                <Card className="p-10 border border-amber-600/10 bg-gradient-to-br from-amber-50 to-slate-50">
+                <Card className="p-10 border border-sky-600/10 bg-gradient-to-br from-sky-50 to-slate-50">
                   <h3 className="text-2xl font-light text-slate-900 mb-6">Why Choose Custom Solutions?</h3>
                   <div className="space-y-6">
                     <div>
@@ -260,37 +260,37 @@ export default function Home() {
                   Visit Our Office
                 </h2>
                 <div className="space-y-8">
-                  <div className="p-8 bg-gradient-to-br from-amber-600/10 to-amber-500/5 border border-amber-600/20 rounded-lg">
+                  <div className="p-8 bg-gradient-to-br from-sky-600/10 to-sky-500/5 border border-sky-600/20 rounded-lg">
                     <h3 className="text-2xl font-light text-slate-900 mb-4">frenaphok LLP Solutions</h3>
                     <div className="space-y-4">
                       <div className="flex gap-4">
-                        <svg className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-6 h-6 text-sky-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
                         </svg>
                         <div>
-                          <p className="text-sm text-amber-600/70 font-light uppercase tracking-wider mb-1">Address</p>
+                          <p className="text-sm text-sky-600/70 font-light uppercase tracking-wider mb-1">Address</p>
                           <p className="text-lg text-slate-900 font-light">CityView Building, 1st Floor</p>
                           <p className="text-lg text-slate-900 font-light">Ngara, Nairobi</p>
                         </div>
                       </div>
                       <div className="flex gap-4">
-                        <svg className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-6 h-6 text-sky-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                         </svg>
                         <div>
-                          <p className="text-sm text-amber-600/70 font-light uppercase tracking-wider mb-1">Phone</p>
-                          <a href="tel:+254715273453" className="text-lg text-amber-600 hover:text-amber-700 font-light transition-colors">
+                          <p className="text-sm text-sky-600/70 font-light uppercase tracking-wider mb-1">Phone</p>
+                          <a href="tel:+254715273453" className="text-lg text-sky-600 hover:text-sky-700 font-light transition-colors">
                             +254 715 273 453
                           </a>
                         </div>
                       </div>
                       <div className="flex gap-4">
-                        <svg className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-6 h-6 text-sky-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                         </svg>
                         <div>
-                          <p className="text-sm text-amber-600/70 font-light uppercase tracking-wider mb-1">Email</p>
-                          <a href="mailto:info@frenaphok.co.ke" className="text-lg text-amber-600 hover:text-amber-700 font-light transition-colors">
+                          <p className="text-sm text-sky-600/70 font-light uppercase tracking-wider mb-1">Email</p>
+                          <a href="mailto:info@frenaphok.co.ke" className="text-lg text-sky-600 hover:text-sky-700 font-light transition-colors">
                             info@frenaphok.co.ke
                           </a>
                         </div>
@@ -298,8 +298,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="p-6 bg-amber-50 border border-amber-200 rounded-lg">
-                    <p className="text-sm text-amber-900 font-light">
+                  <div className="p-6 bg-sky-50 border border-sky-200 rounded-lg">
+                    <p className="text-sm text-sky-900 font-light">
                       <span className="font-semibold">Business Hours:</span><br/>
                       Monday - Friday: 8:00 AM - 6:00 PM<br/>
                       Saturday: 10:00 AM - 3:00 PM<br/>
@@ -310,7 +310,7 @@ export default function Home() {
               </div>
 
               {/* Google Map */}
-              <div className="rounded-lg overflow-hidden shadow-xl border border-amber-600/10">
+              <div className="rounded-lg overflow-hidden shadow-xl border border-sky-600/10">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7479876543!2d36.84159!3d-1.28784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d4f7c7c7c7%3A0x1234567890abcdef!2sCityView%20Building%2C%20Ngara%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1234567890123"
                   width="100%"
@@ -336,7 +336,7 @@ export default function Home() {
               Get a free quote for your IT and security needs. Our team will contact you within 24 hours.
             </p>
             <Link href="/contact">
-              <Button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-10 py-4 text-lg font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button className="bg-gradient-to-r from-sky-600 to-sky-700 hover:from-sky-700 hover:to-sky-800 text-white px-10 py-4 text-lg font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300">
                 Get Started Now
               </Button>
             </Link>

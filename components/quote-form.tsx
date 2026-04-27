@@ -221,7 +221,7 @@ export default function QuoteForm() {
       <Button
         type="submit"
         disabled={loading}
-        className="w-full bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white py-3 text-lg font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300"
+        className="w-full bg-gradient-to-r from-sky-600 to-sky-700 hover:from-sky-700 hover:to-sky-800 text-white py-3 text-lg font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300"
       >
         {loading ? 'Submitting...' : 'Get Your Quote'}
       </Button>

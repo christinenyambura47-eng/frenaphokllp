@@ -49,7 +49,7 @@ export default function ServicesPage() {
               {services.map((service) => {
                 const IconComponent = service.icon
                 return (
-                  <Card key={service.id} className="p-10 border border-amber-600/10 bg-white hover:shadow-xl hover:border-amber-600/20 transition-all duration-300 group">
+                  <Card key={service.id} className="p-10 border border-sky-600/10 bg-white hover:shadow-xl hover:border-sky-600/20 transition-all duration-300 group">
                     <div className="flex flex-col md:flex-row gap-10">
                       <div className="flex-shrink-0">
                         <div className="relative w-full md:w-80 h-48 mb-6 md:mb-0 rounded-lg overflow-hidden">
@@ -61,8 +61,8 @@ export default function ServicesPage() {
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         </div>
-                        <div className="p-5 bg-amber-600/10 rounded-lg w-fit group-hover:bg-amber-600/15 transition-colors duration-300 mx-auto md:mx-0">
-                          <IconComponent className="w-10 h-10 text-amber-600" />
+                        <div className="p-5 bg-sky-600/10 rounded-lg w-fit group-hover:bg-sky-600/15 transition-colors duration-300 mx-auto md:mx-0">
+                          <IconComponent className="w-10 h-10 text-sky-600" />
                         </div>
                       </div>
                       <div className="flex-grow">
@@ -78,7 +78,7 @@ export default function ServicesPage() {
                             <ul className="space-y-3">
                               {service.features.map((feature) => (
                                 <li key={feature} className="text-slate-600 flex gap-3 font-light">
-                                  <span className="text-amber-600 font-bold">✓</span>
+                                  <span className="text-sky-600 font-bold">✓</span>
                                   {feature}
                                 </li>
                               ))}
@@ -89,7 +89,7 @@ export default function ServicesPage() {
                             <ul className="space-y-3">
                               {service.benefits.map((benefit) => (
                                 <li key={benefit} className="text-slate-600 flex gap-3 font-light">
-                                  <span className="text-amber-600 font-bold">✓</span>
+                                  <span className="text-sky-600 font-bold">✓</span>
                                   {benefit}
                                 </li>
                               ))}
@@ -97,7 +97,7 @@ export default function ServicesPage() {
                           </div>
                         </div>
                         <Link href="/contact">
-                          <Button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
+                          <Button className="bg-gradient-to-r from-sky-600 to-sky-700 hover:from-sky-700 hover:to-sky-800 text-white font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2">
                             Request Quote <ArrowRight className="w-4 h-4" />
                           </Button>
                         </Link>
@@ -118,7 +118,7 @@ export default function ServicesPage() {
               We can tailor our services to meet your specific business requirements.
             </p>
             <Link href="/contact">
-              <Button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-10 py-4 text-lg font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button className="bg-gradient-to-r from-sky-600 to-sky-700 hover:from-sky-700 hover:to-sky-800 text-white px-10 py-4 text-lg font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300">
                 Get Your Free Consultation
               </Button>
             </Link>

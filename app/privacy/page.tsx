@@ -127,8 +127,8 @@ export default function PrivacyPage() {
                     If you have any questions about this Privacy Policy, please contact us at:
                   </p>
                   <div className="text-slate-700 font-light">
-                    <p>Email: <a href="mailto:info@frenaphok.com" className="text-amber-600 hover:text-amber-700">info@frenaphok.com</a></p>
-                    <p>Phone: <a href="tel:+254" className="text-amber-600 hover:text-amber-700">+254 (Contact)</a></p>
+                    <p>Email: <a href="mailto:info@frenaphok.com" className="text-sky-600 hover:text-sky-700">info@frenaphok.com</a></p>
+                    <p>Phone: <a href="tel:+254" className="text-sky-600 hover:text-sky-700">+254 (Contact)</a></p>
                     <p>Location: Nairobi, Kenya</p>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ export default function PrivacyPage() {
 
             <div className="text-center mt-12">
               <Link href="/contact">
-                <Button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-10 py-4 text-lg font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300">
+                <Button className="bg-gradient-to-r from-sky-600 to-sky-700 hover:from-sky-700 hover:to-sky-800 text-white px-10 py-4 text-lg font-light tracking-wider rounded-sm shadow-lg hover:shadow-xl transition-all duration-300">
                   Get in Touch
                 </Button>
               </Link>

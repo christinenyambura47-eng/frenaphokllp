@@ -46,38 +46,38 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 mb-20">
               {/* Contact Info */}
               <div className="lg:col-span-1 space-y-6">
-                <Card className="p-8 border border-amber-600/10 bg-slate-50 hover:shadow-lg hover:border-amber-600/20 transition-all duration-300 group">
+                <Card className="p-8 border border-sky-600/10 bg-slate-50 hover:shadow-lg hover:border-sky-600/20 transition-all duration-300 group">
                   <div className="flex gap-4">
-                    <div className="p-4 bg-amber-600/10 rounded-lg h-fit group-hover:bg-amber-600/15 transition-colors duration-300">
-                      <Phone className="w-6 h-6 text-amber-600" />
+                    <div className="p-4 bg-sky-600/10 rounded-lg h-fit group-hover:bg-sky-600/15 transition-colors duration-300">
+                      <Phone className="w-6 h-6 text-sky-600" />
                     </div>
                     <div>
                       <h3 className="font-light text-lg text-slate-900 mb-2">Phone</h3>
-                      <a href="tel:+254" className="text-slate-600 hover:text-amber-600 transition-colors font-light">
+                      <a href="tel:+254" className="text-slate-600 hover:text-sky-600 transition-colors font-light">
                         +254 (Phone)
                       </a>
                     </div>
                   </div>
                 </Card>
 
-                <Card className="p-8 border border-amber-600/10 bg-slate-50 hover:shadow-lg hover:border-amber-600/20 transition-all duration-300 group">
+                <Card className="p-8 border border-sky-600/10 bg-slate-50 hover:shadow-lg hover:border-sky-600/20 transition-all duration-300 group">
                   <div className="flex gap-4">
-                    <div className="p-4 bg-amber-600/10 rounded-lg h-fit group-hover:bg-amber-600/15 transition-colors duration-300">
-                      <Mail className="w-6 h-6 text-amber-600" />
+                    <div className="p-4 bg-sky-600/10 rounded-lg h-fit group-hover:bg-sky-600/15 transition-colors duration-300">
+                      <Mail className="w-6 h-6 text-sky-600" />
                     </div>
                     <div>
                       <h3 className="font-light text-lg text-slate-900 mb-2">Email</h3>
-                      <a href="mailto:info@frenaphok.com" className="text-slate-600 hover:text-amber-600 transition-colors font-light">
+                      <a href="mailto:info@frenaphok.com" className="text-slate-600 hover:text-sky-600 transition-colors font-light">
                         info@frenaphok.com
                       </a>
                     </div>
                   </div>
                 </Card>
 
-                <Card className="p-8 border border-amber-600/10 bg-slate-50 hover:shadow-lg hover:border-amber-600/20 transition-all duration-300 group">
+                <Card className="p-8 border border-sky-600/10 bg-slate-50 hover:shadow-lg hover:border-sky-600/20 transition-all duration-300 group">
                   <div className="flex gap-4">
-                    <div className="p-4 bg-amber-600/10 rounded-lg h-fit group-hover:bg-amber-600/15 transition-colors duration-300">
-                      <MapPin className="w-6 h-6 text-amber-600" />
+                    <div className="p-4 bg-sky-600/10 rounded-lg h-fit group-hover:bg-sky-600/15 transition-colors duration-300">
+                      <MapPin className="w-6 h-6 text-sky-600" />
                     </div>
                     <div>
                       <h3 className="font-light text-lg text-slate-900 mb-2">Location</h3>
@@ -88,10 +88,10 @@ export default function ContactPage() {
                   </div>
                 </Card>
 
-                <Card className="p-8 border border-amber-600/10 bg-slate-50 hover:shadow-lg hover:border-amber-600/20 transition-all duration-300 group">
+                <Card className="p-8 border border-sky-600/10 bg-slate-50 hover:shadow-lg hover:border-sky-600/20 transition-all duration-300 group">
                   <div className="flex gap-4">
-                    <div className="p-4 bg-amber-600/10 rounded-lg h-fit group-hover:bg-amber-600/15 transition-colors duration-300">
-                      <Clock className="w-6 h-6 text-amber-600" />
+                    <div className="p-4 bg-sky-600/10 rounded-lg h-fit group-hover:bg-sky-600/15 transition-colors duration-300">
+                      <Clock className="w-6 h-6 text-sky-600" />
                     </div>
                     <div>
                       <h3 className="font-light text-lg text-slate-900 mb-2">Response Time</h3>
